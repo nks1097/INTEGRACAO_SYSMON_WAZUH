@@ -39,7 +39,7 @@ A integração do Sysmon com o **Wazuh** permite centralizar toda essa telemetri
 ### 3.2. Obtenção do Arquivo de Configuração (`sysmonconfig.xml`)
 Para que o Sysmon capture apenas eventos relevantes e evite excesso de logs insignificantes, utilize um arquivo de configuração XML otimizado (como a versão de Olaf Hartong inclusa neste repositório ou SwiftOnSecurity).
 
-1. Baixe o arquivo `sysmonconfig.xml` e salve-o na mesma pasta dos executáveis do Sysmon.
+1. Baixe o arquivo `sysmonconfig.xml` e salve-o na mesma pasta dos executáveis do Sysmon. https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml
 
 ![Arquivos extraídos do Sysmon e sysmonconfig.xml](imagens/1.png)
 
