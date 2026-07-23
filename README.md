@@ -8,6 +8,7 @@ Documentação completa e passo a passo para instalação, integração e monito
 * **Artigo Oficial do Wazuh:** [Using Wazuh to monitor Sysmon events](https://wazuh.com/blog/using-wazuh-to-monitor-sysmon-events/)
 * **Arquivo de Configuração Modular (sysmonconfig.xml):** [Olaf Hartong - Sysmon Modular GitHub](https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml)
 * **Regras Customizadas Sysmon v5.0 para Wazuh:** [WAZUH_SYSMON_RULES](https://github.com/nks1097/WAZUH_SYSMON_RULES)
+* **Video de Apoio** (https://www.youtube.com/watch?v=M2BzIk8eobI)
 
 ---
 
