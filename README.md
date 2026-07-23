@@ -34,7 +34,9 @@ A integração do Sysmon com o **Wazuh** permite centralizar toda essa telemetri
 
 ### 3.1. Download do Sysmon
 1. Baixe o pacote do Sysmon no site oficial da Microsoft Sysinternals. https://learn.microsoft.com/pt-br/sysinternals/downloads/sysmon
-   ![Download](imagem/Sysmon.png)
+   
+                                                     ![Download](imagem/Sysmon.png)
+   
 3. Extraia o arquivo ZIP em uma pasta dedicada no seu endpoint (Exemplo: `C:\Sysmon` ou na pasta de `Downloads\Sysmon`).
    ![extraçao](imagem/1.0.png)
 
