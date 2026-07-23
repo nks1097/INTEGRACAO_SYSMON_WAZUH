@@ -34,16 +34,16 @@ A integração do Sysmon com o **Wazuh** permite centralizar toda essa telemetri
 
 ### 3.1. Download do Sysmon
 1. Baixe o pacote do Sysmon no site oficial da Microsoft Sysinternals. https://learn.microsoft.com/pt-br/sysinternals/downloads/sysmon
-   ![Download](imagens/Sysmon.png)
+   ![Download](imagem/Sysmon.png)
 3. Extraia o arquivo ZIP em uma pasta dedicada no seu endpoint (Exemplo: `C:\Sysmon` ou na pasta de `Downloads\Sysmon`).
-   ![extraçao](imagens/1.0.png)
+   ![extraçao](imagem/1.0.png)
 
 ### 3.2. Obtenção do Arquivo de Configuração (`sysmonconfig.xml`)
 Para que o Sysmon capture apenas eventos relevantes e evite excesso de logs insignificantes, utilize um arquivo de configuração XML otimizado (como a versão de Olaf Hartong inclusa neste repositório ou SwiftOnSecurity).
 
 1. Baixe o arquivo `sysmonconfig.xml` e salve-o na mesma pasta dos executáveis do Sysmon. https://github.com/olafhartong/sysmon-modular/blob/master/sysmonconfig.xml
 
-   ![Arquivos extraídos do Sysmon e sysmonconfig.xml](imagens/1.png)
+   ![Arquivos extraídos do Sysmon e sysmonconfig.xml](imagem/1.png)
 
 ### 3.3. Instalação via Prompt de Comando (CMD)
 1. Abra o **Prompt de Comando (CMD)** como **Administrador**.
@@ -57,7 +57,7 @@ Para que o Sysmon capture apenas eventos relevantes e evite excesso de logs insi
    ```
    *(Nota: Caso precise atualizar as regras futuramente, utilize o parâmetro `-c`: `Sysmon64.exe -c sysmonconfig.xml`).*
 
-  ![Instalação do Sysmon via CMD Administrador](imagens/2.png)
+  ![Instalação do Sysmon via CMD Administrador](imagem/2.png)
 
 ---
 
@@ -68,7 +68,7 @@ Para que o Sysmon capture apenas eventos relevantes e evite excesso de logs insi
    > **Aplicações e Logs de Serviços** ➔ **Microsoft** ➔ **Windows** ➔ **Sysmon** ➔ **Operational**
 3. Confirme se os eventos do Sysmon (ex: Event ID 1 - Process Creation, Event ID 10 - ProcessAccess, Event ID 13 - RegistryValue, Event ID 17 - Pipe Created) estão sendo gerados normalmente.
 
-  ![Visualizador de Eventos do Windows - Sysmon Operational](imagens/3.png)
+  ![Visualizador de Eventos do Windows - Sysmon Operational](imagem/3.png)
 
 ---
 
@@ -81,7 +81,7 @@ Para enviar os logs coletados pelo Sysmon do endpoint Windows para o Wazuh Manag
    C:\Program Files (x86)\ossec-agent\
    ```
 
-  ![Pasta do Agente Wazuh com ossec.conf](imagens/4.png)
+  ![Pasta do Agente Wazuh com ossec.conf](imagem/4.png)
 
 2. Abra o arquivo `ossec.conf` com um editor de texto (como Notepad++ ou Bloco de Notas) **executado como Administrador**.
 3. Localize a seção de logs (`<localfile>`) e adicione o bloco abaixo para coletar o canal do Sysmon:
@@ -94,7 +94,7 @@ Para enviar os logs coletados pelo Sysmon do endpoint Windows para o Wazuh Manag
    </localfile>
    ```
 
-  ![Edição do ossec.conf adicionando o bloco do Sysmon](imagens/5.png)
+  ![Edição do ossec.conf adicionando o bloco do Sysmon](imagem/5.png)
 
 4. Salve o arquivo `ossec.conf`.
 
